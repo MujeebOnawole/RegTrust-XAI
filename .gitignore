@@ -1,0 +1,31 @@
+# raw and processed genomic data (2.4GB, not suitable for git)
+data/
+
+# model weights
+checkpoints/
+
+# large per-window result arrays (results/*.json summaries are tracked)
+results/*.npz
+
+# manuscript drafts, figures, tables, and the scripts that build them
+manuscript/
+
+# internal working notes, not for the code-availability audience
+project_status.md
+notes/
+
+# SLURM submission scripts
+slurm/
+
+# large source documents
+*.zip
+*.pdf
+
+# python
+__pycache__/
+*.pyc
+python_libs/
+
+# misc
+.DS_Store
+*.log

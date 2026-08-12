@@ -1,0 +1,62 @@
+{
+  "cv_spearman": 0.7474710092759688,
+  "cv_spearman_std": 0.015383604381661586,
+  "holdout_chroms": [
+    "chr8",
+    "chr9"
+  ],
+  "members": [
+    {
+      "fold": 0,
+      "val_spearman": 0.775294088139709,
+      "best_epoch": 5,
+      "n_train": 376165,
+      "n_val": 98781,
+      "checkpoint": "checkpoints/fold_0.pt",
+      "label_mean": 1.206461611795333,
+      "label_std": 0.9923736210750418
+    },
+    {
+      "fold": 1,
+      "val_spearman": 0.7293011739265739,
+      "best_epoch": 4,
+      "n_train": 366127,
+      "n_val": 108819,
+      "checkpoint": "checkpoints/fold_1.pt",
+      "label_mean": 1.1063391571790366,
+      "label_std": 0.9856096462300957
+    },
+    {
+      "fold": 2,
+      "val_spearman": 0.7458999096283959,
+      "best_epoch": 3,
+      "n_train": 393811,
+      "n_val": 81135,
+      "checkpoint": "checkpoints/fold_2.pt",
+      "label_mean": 1.171379759648181,
+      "label_std": 0.9988765060085834
+    },
+    {
+      "fold": 3,
+      "val_spearman": 0.7387458736191074,
+      "best_epoch": 9,
+      "n_train": 376525,
+      "n_val": 98421,
+      "checkpoint": "checkpoints/fold_3.pt",
+      "label_mean": 1.1361400558836836,
+      "label_std": 0.9933936563566396
+    },
+    {
+      "fold": 4,
+      "val_spearman": 0.7481140010660574,
+      "best_epoch": 6,
+      "n_train": 387156,
+      "n_val": 87790,
+      "checkpoint": "checkpoints/fold_4.pt",
+      "label_mean": 1.1705968939271918,
+      "label_std": 0.9991935306078834
+    }
+  ],
+  "device": "cuda",
+  "elapsed_seconds": 4273.237124919891
+}

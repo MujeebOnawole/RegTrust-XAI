@@ -1,0 +1,26 @@
+{
+  "sample_size": 3000,
+  "ref_pool_size": 5000,
+  "n_bins_per_window": 64,
+  "ad_distance": {
+    "mean_orig": 0.040351285835107165,
+    "mean_shuf": 0.06172003503640493,
+    "mean_increase": 0.02136874920129776,
+    "frac_increased": 0.8046666666666666,
+    "wilcoxon_shuf_gt_orig_p": 1.845534060123399e-280
+  },
+  "prediction": {
+    "mean_orig": 1.0032676982402562,
+    "mean_shuf": 0.9388265262701252,
+    "mean_decrease": 0.06444117197013113,
+    "frac_decreased": 0.5766666666666667,
+    "wilcoxon_orig_gt_shuf_p": 8.104005753352552e-20
+  },
+  "motif_coverage": {
+    "mean_orig": 0.6126041666666666,
+    "mean_shuf": 0.5980677083333333,
+    "mean_decrease": 0.014536458333333334,
+    "frac_decreased": 0.528,
+    "wilcoxon_orig_gt_shuf_p": 4.385548999273054e-14
+  }
+}
