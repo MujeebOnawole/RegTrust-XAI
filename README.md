@@ -2,7 +2,7 @@
 
 A trust-aware framework for DNA sequence-to-function prediction in regulatory genomics. A five-model convolutional ensemble predicts K562 chromatin accessibility from DNA sequence, paired with three inference-time reliability signals (ensemble consensus, motif-grounded attribution coherence, and applicability-domain distance) and a five-rung graded distribution-shift evaluation (chromosome holdout, sequence-composition divergence, dinucleotide-shuffle stress test, cross-assay lentiMPRA, and single-nucleotide saturation-mutagenesis perturbation at the PKLR promoter).
 
-Manuscript: *Beyond predictive accuracy: Trust-aware sequence-to-function modelling in regulatory genomics* (in preparation).
+Manuscript: *Trust-Aware Sequence-to-Function Modelling in Regulatory Genomics.* (in preparation)
 
 ## Data sources
 
