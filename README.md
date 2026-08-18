@@ -30,9 +30,12 @@ Scripts run in this order (see each script's own docstring/header for CLI option
 9. `sequence_composition.py` / `rung1a_composition_divergence.py` — composition-divergence severity axis.
 10. `dinuc_shuffle.py` / `rung1b_motif_shuffle.py` — dinucleotide-shuffle stress test.
 11. `rung4_pklr_perturbation.py` — PKLR saturation-mutagenesis perturbation-agreement test.
+12. `sensitivity_thresholds.py` — consensus/coherence calibration-percentile robustness sweep (reuses `xai.py`'s calibration sample and `trust.trust_block()` unchanged). Applicability-domain reference-pool-size robustness reuses `validate_trust_axes.py --ref-pool-size <N>` directly, no separate script.
 
 Supporting modules: `config.py` (paths, hyperparameters, constants), `data_module.py` (sequence loading), `model.py` (CNN architecture + occlusion attribution), `motif_shell.py` (JASPAR K562 motif panel), `trust.py` (consensus/coherence/applicability-domain formulas), `splits.py` (chromosome-grouped cross-validation).
 
 ## Results
 
 Summary statistics from each pipeline stage are tracked under `results/*.json`. Per-window prediction arrays (`results/*.npz`) are regenerable from the tracked checkpoints and data but are not stored in this repository.
+
+`results/sensitivity_thresholds.json` and `results/sensitivity_trust_validation_refpool{2500,10000}.json` are the manuscript's own robustness checks against its calibrated cutoffs: sweeping the consensus/coherence calibration percentile, and sweeping the applicability-domain reference-pool size across a 4x range. Both leave the A/A+B-vs-C+D enrichment pattern qualitatively unchanged from the baseline reported in the main results.
