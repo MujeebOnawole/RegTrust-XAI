@@ -38,3 +38,7 @@ python_libs/
 # misc
 .DS_Store
 *.log
+
+# local media assets and SFTP helper notes, not for the code-availability audience
+media/
+SFTP_TRANSFER_GUIDE.txt

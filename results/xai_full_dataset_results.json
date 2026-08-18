@@ -1,0 +1,199 @@
+{
+  "attribution_checkpoint_label_mean": 1.206461611795333,
+  "attribution_checkpoint_label_std": 0.9923736210750418,
+  "pop_std": 0.7821899056434631,
+  "cutoffs_reused_from": "results/xai_results.json",
+  "cutoffs": {
+    "consensus": 0.21095374673604966,
+    "agreement": 0.5106717837364709
+  },
+  "n_total": 517790,
+  "n_holdout_test": 42844,
+  "n_train_pool": 474946,
+  "thresholds": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "trust": {
+    "full_dataset": {
+      "cutoffs": {
+        "consensus": 0.21095374673604966,
+        "agreement": 0.5106717837364709
+      },
+      "counts": {
+        "A": 49894,
+        "B": 114691,
+        "C": 91948,
+        "D": 246365
+      },
+      "coverage_pct": {
+        "A": 9.92129616741367,
+        "B": 22.806016329355057,
+        "C": 18.283628091581196,
+        "D": 48.989059411650075
+      },
+      "enrichment": {
+        "0.1": {
+          "A": {
+            "n": 49894,
+            "ef": 1.5473564101964492,
+            "precision": 0.18958191365695273,
+            "base_rate": 0.1225198748056266,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 164585,
+            "ef": 1.4079887675505758,
+            "precision": 0.17250660752802502,
+            "base_rate": 0.1225198748056266,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 338313,
+            "ef": 0.8015186194225125,
+            "precision": 0.0982019609060249,
+            "base_rate": 0.1225198748056266,
+            "unstable": false
+          }
+        },
+        "0.2": {
+          "A": {
+            "n": 49894,
+            "ef": 1.5100541441259028,
+            "precision": 0.3739928648735319,
+            "base_rate": 0.247668513296931,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 164585,
+            "ef": 1.3947125164633916,
+            "precision": 0.3454263754291096,
+            "base_rate": 0.247668513296931,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 338313,
+            "ef": 0.8079773478343212,
+            "precision": 0.2001105485157236,
+            "base_rate": 0.247668513296931,
+            "unstable": false
+          }
+        },
+        "0.3": {
+          "A": {
+            "n": 49894,
+            "ef": 1.411126745570916,
+            "precision": 0.5166753517457009,
+            "base_rate": 0.36614383035923787,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 164585,
+            "ef": 1.3294661544360353,
+            "precision": 0.48677583011817604,
+            "base_rate": 0.36614383035923787,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 338313,
+            "ef": 0.8397188785891915,
+            "precision": 0.3074578866316104,
+            "base_rate": 0.36614383035923787,
+            "unstable": false
+          }
+        }
+      }
+    },
+    "coverage_note": "502898/517790 full-dataset windows have a resolvable motif shell; the rest are excluded from trust labelling, not defaulted to a scenario.",
+    "holdout_test_subset_crosscheck": {
+      "cutoffs": {
+        "consensus": 0.21095374673604966,
+        "agreement": 0.5106717837364709
+      },
+      "counts": {
+        "A": 4161,
+        "B": 9511,
+        "C": 7347,
+        "D": 20360
+      },
+      "coverage_pct": {
+        "A": 10.05582541869064,
+        "B": 22.985089054834578,
+        "C": 17.75538316537374,
+        "D": 49.203702361101044
+      },
+      "enrichment": {
+        "0.1": {
+          "A": {
+            "n": 4161,
+            "ef": 1.5962428710865078,
+            "precision": 0.17664023071377072,
+            "base_rate": 0.11065999661664129,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 13672,
+            "ef": 1.4171051577334695,
+            "precision": 0.15681685196021064,
+            "base_rate": 0.11065999661664129,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 27707,
+            "ef": 0.7941797482032702,
+            "precision": 0.08788392824917891,
+            "base_rate": 0.11065999661664129,
+            "unstable": false
+          }
+        },
+        "0.2": {
+          "A": {
+            "n": 4161,
+            "ef": 1.5422838530378837,
+            "precision": 0.3482335976928623,
+            "base_rate": 0.2257908600981174,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 13672,
+            "ef": 1.4191713841016578,
+            "precision": 0.3204359274429491,
+            "base_rate": 0.2257908600981174,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 27707,
+            "ef": 0.7931601702299826,
+            "precision": 0.179088317031797,
+            "base_rate": 0.2257908600981174,
+            "unstable": false
+          }
+        },
+        "0.3": {
+          "A": {
+            "n": 4161,
+            "ef": 1.4470919866658873,
+            "precision": 0.4883441480413362,
+            "base_rate": 0.3374658643273158,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 13672,
+            "ef": 1.363291561482431,
+            "precision": 0.46006436512580456,
+            "base_rate": 0.3374658643273158,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 27707,
+            "ef": 0.8207340300794819,
+            "precision": 0.27696971884361354,
+            "base_rate": 0.3374658643273158,
+            "unstable": false
+          }
+        }
+      }
+    }
+  }
+}
