@@ -17,6 +17,14 @@ notes/
 # SLURM submission scripts
 slurm/
 
+# hf_space demo assets: checkpoints (already excluded by checkpoints/ above),
+# JASPAR panel, AD reference-embedding pool, calibration/example data -- same
+# "code only, no weights/data" convention as the rest of this repo. The demo
+# app's own code (app.py, src/, requirements.txt, README/DEPLOY) IS tracked;
+# see hf_space/DEPLOY.md for how assets/ is rebuilt (precompute_app_assets.py)
+# and deployed straight to Hugging Face, not via this repo.
+hf_space/assets/
+
 # large source documents
 *.zip
 *.pdf

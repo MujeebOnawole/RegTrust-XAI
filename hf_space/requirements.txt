@@ -1,0 +1,6 @@
+gradio>=5.0,<6.0
+torch>=2.0
+numpy
+scipy
+biopython
+matplotlib
