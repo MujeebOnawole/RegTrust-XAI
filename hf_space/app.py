@@ -474,7 +474,7 @@ ABOUT_HTML = f"""
 <div class="rt-section-label">The trust taxonomy</div>
 <div class="rt-card">
   <p style="font-size:0.95rem;line-height:1.6;margin:0 0 14px 0;">
-    Every prediction gets a <b>Scenario A&ndash;D</b> label from two independent axes:
+    Every prediction gets a <b>Scenario A&ndash;D</b> label from two complementary axes:
     <b>consensus</b> (how much a 5-model ensemble agrees with itself) and <b>coherence</b>
     (whether the model's own attribution lands on a real, curated K562-relevant
     transcription-factor motif &mdash; GATA1, TAL1, KLF1, NFE2, GATA2, RUNX1, MYB, STAT5A/B,
@@ -495,7 +495,7 @@ ABOUT_HTML = f"""
 </div>
 
 <div class="rt-card">
-  <div class="rt-eyebrow">A third, independent axis</div>
+  <div class="rt-eyebrow">A third, complementary axis</div>
   <p style="font-size:0.95rem;line-height:1.6;margin:0 0 10px 0;">
     <b>Applicability domain</b> flags whether the input sequence itself looks like anything the
     model was trained on (cosine distance to a 5,000-window training-pool reference in the
@@ -572,7 +572,7 @@ with gr.Blocks(title="RegTrust", css=CUSTOM_CSS, theme=THEME) as demo:
         <div class="rt-stat"><div class="rt-stat-num">517,790</div><div class="rt-stat-lbl">training windows<br>(ENCODE K562 ATAC-seq)</div></div>
         <div class="rt-stat"><div class="rt-stat-num">&rho; 0.78</div><div class="rt-stat-lbl">held-out test<br>accuracy (n=42,844)</div></div>
         <div class="rt-stat"><div class="rt-stat-num">A&ndash;D</div><div class="rt-stat-lbl">per-prediction<br>trust label</div></div>
-        <div class="rt-stat"><div class="rt-stat-num">3</div><div class="rt-stat-lbl">independent trust axes<br>(consensus, coherence, AD)</div></div>
+        <div class="rt-stat"><div class="rt-stat-num">3</div><div class="rt-stat-lbl">complementary trust axes<br>(consensus, coherence, AD)</div></div>
       </div>
     </div>""")
 

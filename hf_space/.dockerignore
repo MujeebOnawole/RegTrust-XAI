@@ -1,0 +1,6 @@
+hf_token.txt
+DEPLOY.md
+__pycache__/
+*.pyc
+.git
+.gitignore

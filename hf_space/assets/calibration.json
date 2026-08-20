@@ -1,0 +1,16 @@
+{
+  "window_bp": 2048,
+  "bin_bp": 32,
+  "pop_std": 0.7821899056434631,
+  "consensus_cutoff": 0.21095374673604966,
+  "coherence_cutoff": 0.5106717837364709,
+  "consensus_calibration_percentile": 30.0,
+  "coherence_calibration_percentile": 70.0,
+  "ad_cutoff": 0.08753135800361633,
+  "ad_embed_percentile": 95.0,
+  "ad_ref_pool_size": 5000,
+  "attribution_checkpoint_label_mean": 1.206461611795333,
+  "attribution_checkpoint_label_std": 0.9923736210750418,
+  "internal_test_rho": 0.7816817799229944,
+  "internal_test_n": 42844
+}
