@@ -1,0 +1,362 @@
+{
+  "note": "Design-facing full-dataset extension of causal_coherence_tail_diagnosis.py. Reliability-type diagnosis belongs to that held-out-test-set script only; this file is for design-facing mining plus the holdout-subset crosscheck against it, computed below.",
+  "full_dataset": {
+    "n_population": 164585,
+    "decile_profile": [
+      {
+        "decile": 1,
+        "n": 16458,
+        "causal_coherence_range": [
+          -0.9592115193605424,
+          -0.037476152181625366
+        ],
+        "mean_abs_error": 0.5028958320617676,
+        "mean_n_instances": 40.23775671406003,
+        "mean_n_modules": 21.635192611495928,
+        "mean_abs_y_true": 1.0042829513549805,
+        "mean_ad_distance": 0.046021509915590286
+      },
+      {
+        "decile": 2,
+        "n": 16459,
+        "causal_coherence_range": [
+          -0.03746495246887205,
+          0.031401273608207714
+        ],
+        "mean_abs_error": 0.48334190249443054,
+        "mean_n_instances": 38.664924965064706,
+        "mean_n_modules": 21.710796524697734,
+        "mean_abs_y_true": 0.9332358241081238,
+        "mean_ad_distance": 0.046031150966882706
+      },
+      {
+        "decile": 3,
+        "n": 16458,
+        "causal_coherence_range": [
+          0.03140822649002075,
+          0.08587292432785032
+        ],
+        "mean_abs_error": 0.4488445818424225,
+        "mean_n_instances": 38.44166970470288,
+        "mean_n_modules": 21.70415603353992,
+        "mean_abs_y_true": 0.8332648873329163,
+        "mean_ad_distance": 0.042228955775499344
+      },
+      {
+        "decile": 4,
+        "n": 16459,
+        "causal_coherence_range": [
+          0.08588700890541079,
+          0.13207726180553436
+        ],
+        "mean_abs_error": 0.40690529346466064,
+        "mean_n_instances": 37.97946412297223,
+        "mean_n_modules": 21.683152074852664,
+        "mean_abs_y_true": 0.7401522397994995,
+        "mean_ad_distance": 0.03752841800451279
+      },
+      {
+        "decile": 5,
+        "n": 16458,
+        "causal_coherence_range": [
+          0.13208663761615758,
+          0.17430204153060913
+        ],
+        "mean_abs_error": 0.3765873610973358,
+        "mean_n_instances": 37.495929031474056,
+        "mean_n_modules": 21.61252886134403,
+        "mean_abs_y_true": 0.6776574850082397,
+        "mean_ad_distance": 0.03358692303299904
+      },
+      {
+        "decile": 6,
+        "n": 16459,
+        "causal_coherence_range": [
+          0.17430380284786223,
+          0.21523835659027102
+        ],
+        "mean_abs_error": 0.33799636363983154,
+        "mean_n_instances": 37.037001032869554,
+        "mean_n_modules": 21.477246491281367,
+        "mean_abs_y_true": 0.6288213133811951,
+        "mean_ad_distance": 0.030432939529418945
+      },
+      {
+        "decile": 7,
+        "n": 16458,
+        "causal_coherence_range": [
+          0.21524931192398067,
+          0.2589154720306397
+        ],
+        "mean_abs_error": 0.3154144883155823,
+        "mean_n_instances": 36.57674079475027,
+        "mean_n_modules": 21.347186778466398,
+        "mean_abs_y_true": 0.6169577836990356,
+        "mean_ad_distance": 0.028005452826619148
+      },
+      {
+        "decile": 8,
+        "n": 16459,
+        "causal_coherence_range": [
+          0.25891861915588377,
+          0.3139298796653748
+        ],
+        "mean_abs_error": 0.29855698347091675,
+        "mean_n_instances": 36.21708487757458,
+        "mean_n_modules": 21.17734977823683,
+        "mean_abs_y_true": 0.6412479877471924,
+        "mean_ad_distance": 0.025400763377547264
+      },
+      {
+        "decile": 9,
+        "n": 16458,
+        "causal_coherence_range": [
+          0.3139307290315628,
+          0.4108863830566406
+        ],
+        "mean_abs_error": 0.3128616511821747,
+        "mean_n_instances": 36.423684530319605,
+        "mean_n_modules": 20.991371977153968,
+        "mean_abs_y_true": 0.8779695630073547,
+        "mean_ad_distance": 0.023840267211198807
+      },
+      {
+        "decile": 10,
+        "n": 16459,
+        "causal_coherence_range": [
+          0.41088682413101196,
+          1.3449190735816956
+        ],
+        "mean_abs_error": 0.49917516112327576,
+        "mean_n_instances": 41.817121331794155,
+        "mean_n_modules": 21.20833586487636,
+        "mean_abs_y_true": 2.1853785514831543,
+        "mean_ad_distance": 0.01856648363173008
+      }
+    ],
+    "spearman_whole": {
+      "error": {
+        "rho": -0.1701646421104811,
+        "p": 0.0
+      },
+      "n_instances": {
+        "rho": -0.08202963192627252,
+        "p": 1.217957863867945e-243
+      },
+      "n_modules": {
+        "rho": -0.08612754276227115,
+        "p": 1.826979931089589e-268
+      },
+      "abs_y_true": {
+        "rho": 0.006310677501518123,
+        "p": 0.010461505487611829
+      },
+      "ad_distance": {
+        "rho": -0.477424358844112,
+        "p": 0.0
+      }
+    },
+    "spearman_top_decile_only": {
+      "error": {
+        "rho": 0.14369876906793544,
+        "p": 1.1878629421304607e-76
+      },
+      "n_instances": {
+        "rho": 0.4290277120730124,
+        "p": 0.0
+      },
+      "n_modules": {
+        "rho": -0.02025946666270792,
+        "p": 0.009346017742194459
+      },
+      "abs_y_true": {
+        "rho": 0.34622449062009664,
+        "p": 0.0
+      },
+      "ad_distance": {
+        "rho": -0.2508514723770487,
+        "p": 1.4052561750137884e-234
+      }
+    }
+  },
+  "holdout_test_subset_crosscheck": {
+    "n_population": 13672,
+    "decile_profile": [
+      {
+        "decile": 1,
+        "n": 1367,
+        "causal_coherence_range": [
+          -0.6212312459945679,
+          -0.04108107239007952
+        ],
+        "mean_abs_error": 0.5275876522064209,
+        "mean_n_instances": 40.42648134601317,
+        "mean_n_modules": 21.661302121433796,
+        "mean_abs_y_true": 1.0746636390686035,
+        "mean_ad_distance": 0.04591645672917366
+      },
+      {
+        "decile": 2,
+        "n": 1367,
+        "causal_coherence_range": [
+          -0.04097403287887569,
+          0.02871940732002258
+        ],
+        "mean_abs_error": 0.5263833999633789,
+        "mean_n_instances": 38.9743964886613,
+        "mean_n_modules": 21.758595464520848,
+        "mean_abs_y_true": 0.9750527143478394,
+        "mean_ad_distance": 0.046007003635168076
+      },
+      {
+        "decile": 3,
+        "n": 1367,
+        "causal_coherence_range": [
+          0.028776907920837425,
+          0.08583916872739791
+        ],
+        "mean_abs_error": 0.49953413009643555,
+        "mean_n_instances": 38.787856620336505,
+        "mean_n_modules": 21.720555961960496,
+        "mean_abs_y_true": 0.8191240429878235,
+        "mean_ad_distance": 0.04286753013730049
+      },
+      {
+        "decile": 4,
+        "n": 1367,
+        "causal_coherence_range": [
+          0.08584018349647526,
+          0.13226644992828368
+        ],
+        "mean_abs_error": 0.4349570572376251,
+        "mean_n_instances": 38.099487929773225,
+        "mean_n_modules": 21.799561082662766,
+        "mean_abs_y_true": 0.7199549078941345,
+        "mean_ad_distance": 0.03752458840608597
+      },
+      {
+        "decile": 5,
+        "n": 1368,
+        "causal_coherence_range": [
+          0.13229319155216218,
+          0.17435657680034633
+        ],
+        "mean_abs_error": 0.39766421914100647,
+        "mean_n_instances": 37.21345029239766,
+        "mean_n_modules": 21.640350877192983,
+        "mean_abs_y_true": 0.6304334402084351,
+        "mean_ad_distance": 0.032703470438718796
+      },
+      {
+        "decile": 6,
+        "n": 1367,
+        "causal_coherence_range": [
+          0.17437824606895447,
+          0.21435362100601196
+        ],
+        "mean_abs_error": 0.3529840111732483,
+        "mean_n_instances": 36.99853694220922,
+        "mean_n_modules": 21.41770299926847,
+        "mean_abs_y_true": 0.6096476912498474,
+        "mean_ad_distance": 0.02980547770857811
+      },
+      {
+        "decile": 7,
+        "n": 1367,
+        "causal_coherence_range": [
+          0.2143610566854477,
+          0.25504001379013064
+        ],
+        "mean_abs_error": 0.33972787857055664,
+        "mean_n_instances": 36.57717629846379,
+        "mean_n_modules": 21.28749085588881,
+        "mean_abs_y_true": 0.5760434865951538,
+        "mean_ad_distance": 0.027382271364331245
+      },
+      {
+        "decile": 8,
+        "n": 1367,
+        "causal_coherence_range": [
+          0.255060875415802,
+          0.30811059176921846
+        ],
+        "mean_abs_error": 0.3112852871417999,
+        "mean_n_instances": 36.19166057059254,
+        "mean_n_modules": 21.03145574250183,
+        "mean_abs_y_true": 0.5789993405342102,
+        "mean_ad_distance": 0.024962887167930603
+      },
+      {
+        "decile": 9,
+        "n": 1367,
+        "causal_coherence_range": [
+          0.3081439435482025,
+          0.40551407337188716
+        ],
+        "mean_abs_error": 0.3246382474899292,
+        "mean_n_instances": 36.18800292611558,
+        "mean_n_modules": 20.627651792245793,
+        "mean_abs_y_true": 0.807288646697998,
+        "mean_ad_distance": 0.024497177451848984
+      },
+      {
+        "decile": 10,
+        "n": 1368,
+        "causal_coherence_range": [
+          0.4055578351020813,
+          1.1382587671279907
+        ],
+        "mean_abs_error": 0.5152997374534607,
+        "mean_n_instances": 42.0687134502924,
+        "mean_n_modules": 21.212719298245613,
+        "mean_abs_y_true": 2.12021803855896,
+        "mean_ad_distance": 0.01800798438489437
+      }
+    ],
+    "spearman_whole": {
+      "error": {
+        "rho": -0.18089559395175553,
+        "p": 6.533707084595835e-101
+      },
+      "n_instances": {
+        "rho": -0.09927335383375595,
+        "p": 2.7212829636966167e-31
+      },
+      "n_modules": {
+        "rho": -0.11248893801043178,
+        "p": 9.535931686894198e-40
+      },
+      "abs_y_true": {
+        "rho": -0.030941061702950596,
+        "p": 0.00029644013909065244
+      },
+      "ad_distance": {
+        "rho": -0.5081509927140401,
+        "p": 0.0
+      }
+    },
+    "spearman_top_decile_only": {
+      "error": {
+        "rho": 0.1413044615896784,
+        "p": 1.5543032378846876e-07
+      },
+      "n_instances": {
+        "rho": 0.5058409734084527,
+        "p": 1.0657340596470185e-89
+      },
+      "n_modules": {
+        "rho": 0.017293162179252072,
+        "p": 0.5229255179501553
+      },
+      "abs_y_true": {
+        "rho": 0.3538899852888875,
+        "p": 1.3275657284250203e-41
+      },
+      "ad_distance": {
+        "rho": -0.23560360002420253,
+        "p": 1.0699468253257121e-18
+      }
+    }
+  },
+  "crosscheck_reference_file": "results/causal_coherence_tail_diagnosis_results.json"
+}

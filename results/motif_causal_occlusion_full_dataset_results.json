@@ -1,0 +1,207 @@
+{
+  "note": "Design-facing full-dataset extension of motif_causal_occlusion.py's causal-coherence ablation, matching xai_full_dataset.py's own relationship to xai.py. Reliability-type comparisons against xai_results.json/trust_validation_results.json belong to the held-out-test-set run only (motif_causal_occlusion_results.json); this file is for design-facing mining and the holdout-subset crosscheck below.",
+  "consensus_cutoff_reused_from": "results/xai_results.json",
+  "causal_agreement_cutoff_reused_from": "results/motif_causal_occlusion_results.json",
+  "consensus_cutoff": 0.21095374673604966,
+  "causal_agreement_cutoff": 0.2217500701546669,
+  "module_gap_bp": 24,
+  "n_random_controls": 5,
+  "n_total": 517790,
+  "n_holdout_test": 42844,
+  "n_train_pool": 474946,
+  "thresholds": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "trust": {
+    "full_dataset": {
+      "cutoffs": {
+        "consensus": 0.21095374673604966,
+        "agreement": 0.2217500701546669
+      },
+      "counts": {
+        "A": 63306,
+        "B": 101278,
+        "C": 88657,
+        "D": 249657
+      },
+      "coverage_pct": {
+        "A": 12.588238569252612,
+        "B": 20.13887508003611,
+        "C": 17.629221034881827,
+        "D": 49.64366531582945
+      },
+      "enrichment": {
+        "0.1": {
+          "A": {
+            "n": 63306,
+            "ef": 1.8744595384752816,
+            "precision": 0.2296622752977601,
+            "base_rate": 0.12252186328042665,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 164584,
+            "ef": 1.4079744712203623,
+            "precision": 0.17250765566519224,
+            "base_rate": 0.12252186328042665,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 338314,
+            "ef": 0.8015273669687565,
+            "precision": 0.09820462647126633,
+            "base_rate": 0.12252186328042665,
+            "unstable": false
+          }
+        },
+        "0.2": {
+          "A": {
+            "n": 63306,
+            "ef": 1.7753935759020008,
+            "precision": 0.43970555713518467,
+            "base_rate": 0.24766652482213092,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 164584,
+            "ef": 1.3947321886228066,
+            "precision": 0.3454284742137753,
+            "base_rate": 0.24766652482213092,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 338314,
+            "ef": 0.8079695119554733,
+            "precision": 0.20010700118824523,
+            "base_rate": 0.24766652482213092,
+            "unstable": false
+          }
+        },
+        "0.3": {
+          "A": {
+            "n": 63306,
+            "ef": 1.5951093305215336,
+            "precision": 0.5840362682842068,
+            "base_rate": 0.3661418418844378,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 164584,
+            "ef": 1.3294648579398713,
+            "precision": 0.486772711806737,
+            "base_rate": 0.3661418418844378,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 338314,
+            "ef": 0.8397209569241124,
+            "precision": 0.3074569778371572,
+            "base_rate": 0.3661418418844378,
+            "unstable": false
+          }
+        }
+      }
+    },
+    "coverage_note": "502898/517790 full-dataset windows have a resolvable motif shell; the rest are excluded from trust labelling, not defaulted to a scenario.",
+    "holdout_test_subset_crosscheck": {
+      "cutoffs": {
+        "consensus": 0.21095374673604966,
+        "agreement": 0.2217500701546669
+      },
+      "counts": {
+        "A": 5214,
+        "B": 8458,
+        "C": 7069,
+        "D": 20638
+      },
+      "coverage_pct": {
+        "A": 12.600594504458783,
+        "B": 20.440319969066433,
+        "C": 17.083544793252617,
+        "D": 49.87554073322217
+      },
+      "enrichment": {
+        "0.1": {
+          "A": {
+            "n": 5214,
+            "ef": 1.88567661795192,
+            "precision": 0.20866896816263905,
+            "base_rate": 0.11065999661664129,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 13672,
+            "ef": 1.4171051577334695,
+            "precision": 0.15681685196021064,
+            "base_rate": 0.11065999661664129,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 27707,
+            "ef": 0.7941797482032702,
+            "precision": 0.08788392824917891,
+            "base_rate": 0.11065999661664129,
+            "unstable": false
+          }
+        },
+        "0.2": {
+          "A": {
+            "n": 5214,
+            "ef": 1.8245547179251014,
+            "precision": 0.41196777905638665,
+            "base_rate": 0.2257908600981174,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 13672,
+            "ef": 1.4191713841016578,
+            "precision": 0.3204359274429491,
+            "base_rate": 0.2257908600981174,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 27707,
+            "ef": 0.7931601702299826,
+            "precision": 0.179088317031797,
+            "base_rate": 0.2257908600981174,
+            "unstable": false
+          }
+        },
+        "0.3": {
+          "A": {
+            "n": 5214,
+            "ef": 1.6799778420854679,
+            "precision": 0.5669351745301112,
+            "base_rate": 0.3374658643273158,
+            "unstable": false
+          },
+          "A+B": {
+            "n": 13672,
+            "ef": 1.363291561482431,
+            "precision": 0.46006436512580456,
+            "base_rate": 0.3374658643273158,
+            "unstable": false
+          },
+          "C+D": {
+            "n": 27707,
+            "ef": 0.8207340300794819,
+            "precision": 0.27696971884361354,
+            "base_rate": 0.3374658643273158,
+            "unstable": false
+          }
+        }
+      }
+    }
+  },
+  "additivity": {
+    "n_multi_instance_modules": 4703837,
+    "mean_abs_joint_delta": 0.16871606404685743,
+    "mean_abs_summed_instance_deltas": 0.06466426103097221,
+    "mean_signed_diff_joint_minus_summed": 0.10405180301588524,
+    "frac_superadditive": 0.9040077281589477,
+    "frac_subadditive": 0.09599205924865169,
+    "wilcoxon_joint_vs_summed_p": 0.0
+  }
+}

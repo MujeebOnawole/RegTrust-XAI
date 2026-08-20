@@ -1,0 +1,202 @@
+{
+  "note": "Confound-controlled follow-up to causal_coherence_tail_diagnosis.py's decile profile. Controls: |y_true| (regression-to-mean confound), AD distance (causal_coherence correlates rho -0.51 with AD distance across the whole A+B population), n_instances (motif-instance count). Bin-overlap coherence run through the identical control set for a fair side-by-side comparison -- does EITHER axis's raw advantage survive, or does controlling for these confounds erase the gap between them?",
+  "causal": {
+    "whole_ab": {
+      "n": 13672,
+      "raw_spearman": {
+        "rho": -0.1828046062100602,
+        "p": 4.776892848458045e-103
+      },
+      "partial_spearman": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances"
+        ],
+        "n": 13672,
+        "partial_rho": -0.030092146254789887,
+        "partial_p": 0.00043306337742506643
+      },
+      "ols": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.4230110608203422,
+            "se": 0.002817656378410482,
+            "p": 0.0
+          },
+          "causal_coherence_z": {
+            "beta": -0.02474575195933107,
+            "se": 0.003249351650293615,
+            "p": 2.7977620220553945e-14
+          },
+          "abs_y_true_z": {
+            "beta": 0.11580476203240835,
+            "se": 0.00304429624667555,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.07612620370765713,
+            "se": 0.0031697352631029157,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": 0.012216934492944672,
+            "se": 0.0028778857665468054,
+            "p": 2.199313726958252e-05
+          }
+        },
+        "r_squared": 0.1720723658714436
+      }
+    },
+    "top_decile": {
+      "n": 1367,
+      "raw_spearman": {
+        "rho": 0.144323138660512,
+        "p": 8.356673800741192e-08
+      },
+      "partial_spearman": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances"
+        ],
+        "n": 1367,
+        "partial_rho": 0.02498623689383457,
+        "partial_p": 0.3559476823375204
+      },
+      "ols": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.519374194863549,
+            "se": 0.01149923651255126,
+            "p": 0.0
+          },
+          "causal_coherence_z": {
+            "beta": 0.0018496774629405514,
+            "se": 0.014356675181308209,
+            "p": 0.8975052910619348
+          },
+          "abs_y_true_z": {
+            "beta": 0.0344432185698863,
+            "se": 0.012537336581065912,
+            "p": 0.0060889246481363735
+          },
+          "ad_distance_z": {
+            "beta": 0.03351012699138016,
+            "se": 0.012467740913977317,
+            "p": 0.007281233346574378
+          },
+          "n_instances_z": {
+            "beta": 0.055478596199801423,
+            "se": 0.014030929457105315,
+            "p": 8.079771417257575e-05
+          }
+        },
+        "r_squared": 0.03357383278254511
+      }
+    }
+  },
+  "bin_overlap": {
+    "whole_ab": {
+      "n": 13672,
+      "raw_spearman": {
+        "rho": -0.05690455242802953,
+        "p": 2.766658566799211e-11
+      },
+      "partial_spearman": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances"
+        ],
+        "n": 13672,
+        "partial_rho": -0.03648718945459234,
+        "partial_p": 1.9778178584590878e-05
+      },
+      "ols": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.4230110604999827,
+            "se": 0.002820625665145099,
+            "p": 0.0
+          },
+          "causal_coherence_z": {
+            "beta": -0.015243769760886941,
+            "se": 0.002825063302787186,
+            "p": 6.931617013705704e-08
+          },
+          "abs_y_true_z": {
+            "beta": 0.10833664106220744,
+            "se": 0.00289724988883072,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.08620930424683955,
+            "se": 0.0028399384387588,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": 0.012743068726141636,
+            "se": 0.0028815634722572634,
+            "p": 9.842071439392086e-06
+          }
+        },
+        "r_squared": 0.17032648238846237
+      }
+    },
+    "top_decile": {
+      "n": 1367,
+      "raw_spearman": {
+        "rho": -0.0816145914454311,
+        "p": 0.002529319163178469
+      },
+      "partial_spearman": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances"
+        ],
+        "n": 1367,
+        "partial_rho": -0.06520092083515468,
+        "partial_p": 0.01590746449869429
+      },
+      "ols": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.3877148722561178,
+            "se": 0.008560058171315124,
+            "p": 0.0
+          },
+          "causal_coherence_z": {
+            "beta": -0.020243958819071678,
+            "se": 0.00877677759614716,
+            "p": 0.021230156466804484
+          },
+          "abs_y_true_z": {
+            "beta": 0.1203985135893161,
+            "se": 0.008762653585750178,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.06970984720495296,
+            "se": 0.008597714654555926,
+            "p": 1.1102230246251565e-15
+          },
+          "n_instances_z": {
+            "beta": 0.01560666600708528,
+            "se": 0.00894463536864252,
+            "p": 0.08124394394535561
+          }
+        },
+        "r_squared": 0.1841989418185387
+      }
+    }
+  },
+  "verdict": "inversion does NOT clearly survive confound control -- better explained by the |y_true|/AD-distance/n_instances confounds already on record than by a new independent phenomenon",
+  "whole_ab_comparison": {
+    "causal_raw_rho": -0.1828046062100602,
+    "causal_partial_rho": -0.030092146254789887,
+    "bin_overlap_raw_rho": -0.05690455242802953,
+    "bin_overlap_partial_rho": -0.03648718945459234
+  }
+}

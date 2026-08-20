@@ -1,0 +1,126 @@
+{
+  "note": "Supplementary robustness check: is xai.py's bin-overlap coherence result sensitive to occlusion-unit granularity? Same checkpoint, same consensus cutoff, same test set; only the coherence axis is recomputed as a causal, motif-span-exact, random-matched-control-adjusted knockout effect. Compare against results/xai_results.json and results/trust_validation_results.json (coherence_vs_error, coherence_scenario_a_vs_b_conditional) -- do not treat this file as replacing either.",
+  "module_gap_bp": 24,
+  "n_random_controls": 5,
+  "mask_value": 0.25,
+  "consensus_cutoff_reused": 0.21095374673604966,
+  "causal_agreement_cutoff": 0.2217500701546669,
+  "n_test_sampled": 42844,
+  "n_test_with_shell": 41379,
+  "trust": {
+    "cutoffs": {
+      "consensus": 0.21095374673604966,
+      "agreement": 0.2217500701546669
+    },
+    "counts": {
+      "A": 5194,
+      "B": 8478,
+      "C": 7091,
+      "D": 20616
+    },
+    "coverage_pct": {
+      "A": 12.552260808622732,
+      "B": 20.488653664902486,
+      "C": 17.136711858672275,
+      "D": 49.82237366780251
+    },
+    "enrichment": {
+      "0.1": {
+        "A": {
+          "n": 5194,
+          "ef": 1.9155554189519162,
+          "precision": 0.21197535618020794,
+          "base_rate": 0.11065999661664129,
+          "unstable": false
+        },
+        "A+B": {
+          "n": 13672,
+          "ef": 1.4171051577334695,
+          "precision": 0.15681685196021064,
+          "base_rate": 0.11065999661664129,
+          "unstable": false
+        },
+        "C+D": {
+          "n": 27707,
+          "ef": 0.7941797482032702,
+          "precision": 0.08788392824917891,
+          "base_rate": 0.11065999661664129,
+          "unstable": false
+        }
+      },
+      "0.2": {
+        "A": {
+          "n": 5194,
+          "ef": 1.8622772198105562,
+          "precision": 0.42048517520215634,
+          "base_rate": 0.2257908600981174,
+          "unstable": false
+        },
+        "A+B": {
+          "n": 13672,
+          "ef": 1.4191713841016578,
+          "precision": 0.3204359274429491,
+          "base_rate": 0.2257908600981174,
+          "unstable": false
+        },
+        "C+D": {
+          "n": 27707,
+          "ef": 0.7931601702299826,
+          "precision": 0.179088317031797,
+          "base_rate": 0.2257908600981174,
+          "unstable": false
+        }
+      },
+      "0.3": {
+        "A": {
+          "n": 5194,
+          "ef": 1.694433990390825,
+          "precision": 0.5718136311128225,
+          "base_rate": 0.3374658643273158,
+          "unstable": false
+        },
+        "A+B": {
+          "n": 13672,
+          "ef": 1.363291561482431,
+          "precision": 0.46006436512580456,
+          "base_rate": 0.3374658643273158,
+          "unstable": false
+        },
+        "C+D": {
+          "n": 27707,
+          "ef": 0.8207340300794819,
+          "precision": 0.27696971884361354,
+          "base_rate": 0.3374658643273158,
+          "unstable": false
+        }
+      }
+    }
+  },
+  "causal_coherence_vs_error_pooled": {
+    "n": 41379,
+    "rho": -0.13258541593037199,
+    "p": 1.3216891152865703e-161
+  },
+  "causal_coherence_scenario_a_vs_b_conditional": {
+    "n_a": 5194,
+    "n_b": 8478,
+    "mean_abs_error_a": 0.37195858359336853,
+    "mean_abs_error_b": 0.4542880654335022,
+    "mann_whitney_a_lt_b_p": 8.485204666145562e-82,
+    "welch_t_p": 1.1730337019571492e-37,
+    "precision_ratio_a_over_b": {
+      "0.1": 1.7230365001877304,
+      "0.2": 1.6226096109985806,
+      "0.3": 1.4601915555947316
+    }
+  },
+  "additivity": {
+    "n_multi_instance_modules": 387835,
+    "mean_abs_joint_delta": 0.17181360458869369,
+    "mean_abs_summed_instance_deltas": 0.06486839539371515,
+    "mean_signed_diff_joint_minus_summed": 0.10694520919497855,
+    "frac_superadditive": 0.9106785101911895,
+    "frac_subadditive": 0.08932148980881045,
+    "wilcoxon_joint_vs_summed_p": 0.0
+  }
+}

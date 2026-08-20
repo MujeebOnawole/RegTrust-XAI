@@ -127,6 +127,31 @@ def motif_hit_positions(seq: str, pssms: dict) -> np.ndarray:
     return covered
 
 
+def motif_hit_positions_by_tf(seq: str, pssms: dict) -> dict[str, np.ndarray]:
+    """Same scan as motif_hit_positions(), but kept SEPARATE per panel TF
+    instead of OR'd together -- added 2026-08-20 for the per-panel-TF
+    breakdown of the causal-coherence top-decile residual (does one specific
+    K562 panel TF's presence/count disproportionately drive the top-decile
+    windows, vs. motif density in aggregate already tested via n_instances).
+    Same reverse-complement-mandatory scanning discipline as
+    motif_hit_positions() -- see that function's own docstring for why."""
+    seq_obj = Seq(seq.upper())
+    n = len(seq)
+    out = {}
+    for name, (fwd, rev, threshold) in pssms.items():
+        length = fwd.length
+        covered = np.zeros(n, dtype=bool)
+        if length <= n:
+            for pssm in (fwd, rev):
+                scores = pssm.calculate(seq_obj)
+                scores = np.atleast_1d(np.asarray(scores, dtype=np.float64))
+                hits = np.where(scores >= threshold)[0]
+                for start in hits:
+                    covered[start:start + length] = True
+        out[name] = covered
+    return out
+
+
 def motif_coverage_by_bin(seq: str, pssms: dict, bin_width: int, bin_stride: int) -> list[int]:
     """The actual coherence "shell": indices of occlusion bins (see
     model.py's occlusion_attribution, same bin_width/bin_stride convention)

@@ -1,0 +1,392 @@
+{
+  "note": "Design-facing full-dataset extension of causal_coherence_confound_controlled.py. Reliability-type comparisons belong to that held-out-test-set script only; the holdout_test_subset_crosscheck block below should reproduce it and is the number to trust for reliability claims.",
+  "full_dataset": {
+    "causal": {
+      "whole": {
+        "n": 164585,
+        "raw_spearman": {
+          "rho": -0.1701646421104811,
+          "p": 0.0
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 164585,
+          "partial_rho": -0.042263202293555596,
+          "partial_p": 5.935737042102417e-66
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.3982581826587226,
+              "se": 0.0007801541981270164,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": -0.018984428122018684,
+              "se": 0.0009051241416113605,
+              "p": 0.0
+            },
+            "abs_y_true_z": {
+              "beta": 0.0852767529021965,
+              "se": 0.0008582083794212103,
+              "p": 0.0
+            },
+            "ad_distance_z": {
+              "beta": 0.06822811440942982,
+              "se": 0.0008736742622092113,
+              "p": 0.0
+            },
+            "n_instances_z": {
+              "beta": 0.02032760316244836,
+              "se": 0.000796399898816291,
+              "p": 0.0
+            }
+          },
+          "r_squared": 0.12946321816639728
+        }
+      },
+      "top_decile": {
+        "n": 16458,
+        "raw_spearman": {
+          "rho": 0.14369876906793544,
+          "p": 1.1878629421304607e-76
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 16458,
+          "partial_rho": 0.0669345771383544,
+          "partial_p": 8.258539577048414e-18
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.499175974600686,
+              "se": 0.003209993870112931,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": 0.02221849917662079,
+              "se": 0.003927988548597914,
+              "p": 1.5709945566655392e-08
+            },
+            "abs_y_true_z": {
+              "beta": -0.0021638038634333753,
+              "se": 0.0034250781113730655,
+              "p": 0.5275569733076135
+            },
+            "ad_distance_z": {
+              "beta": 0.018941635231993537,
+              "se": 0.0034279582870460137,
+              "p": 3.332846021386615e-08
+            },
+            "n_instances_z": {
+              "beta": 0.04682777878625576,
+              "se": 0.003751465359042136,
+              "p": 0.0
+            }
+          },
+          "r_squared": 0.023119753114811292
+        }
+      }
+    },
+    "bin_overlap": {
+      "whole": {
+        "n": 164585,
+        "raw_spearman": {
+          "rho": -0.04761930452680592,
+          "p": 3.031628251203153e-83
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 164585,
+          "partial_rho": -0.027655616323953268,
+          "partial_p": 3.191159425071962e-29
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.39825818274101765,
+              "se": 0.0007809459985252357,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": -0.008030344697238775,
+              "se": 0.0007819420163064527,
+              "p": 0.0
+            },
+            "abs_y_true_z": {
+              "beta": 0.07882612698213631,
+              "se": 0.0008025082618377205,
+              "p": 0.0
+            },
+            "ad_distance_z": {
+              "beta": 0.07584932428799618,
+              "se": 0.000787485254151279,
+              "p": 0.0
+            },
+            "n_instances_z": {
+              "beta": 0.02052368152471023,
+              "se": 0.00079713765889566,
+              "p": 0.0
+            }
+          },
+          "r_squared": 0.12769525700498074
+        }
+      },
+      "top_decile": {
+        "n": 16458,
+        "raw_spearman": {
+          "rho": -0.05028917037806927,
+          "p": 1.0812717326160087e-10
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 16458,
+          "partial_rho": -0.011917099659516237,
+          "partial_p": 0.12632201198877047
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.36881478271718404,
+              "se": 0.002434018131522753,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": -0.002938996134901825,
+              "se": 0.002558120265553274,
+              "p": 0.2506184716734463
+            },
+            "abs_y_true_z": {
+              "beta": 0.08782776065987837,
+              "se": 0.0025296505894145975,
+              "p": 0.0
+            },
+            "ad_distance_z": {
+              "beta": 0.07080704609633148,
+              "se": 0.002456101173322436,
+              "p": 0.0
+            },
+            "n_instances_z": {
+              "beta": 0.024406045611099082,
+              "se": 0.002633928328792621,
+              "p": 0.0
+            }
+          },
+          "r_squared": 0.14280466672732106
+        }
+      }
+    }
+  },
+  "holdout_test_subset_crosscheck": {
+    "causal": {
+      "whole": {
+        "n": 13672,
+        "raw_spearman": {
+          "rho": -0.18089559395175553,
+          "p": 6.533707084595835e-101
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 13672,
+          "partial_rho": -0.0292343583620586,
+          "partial_p": 0.0006291793606281519
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.42301106262924915,
+              "se": 0.002817871878238715,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": -0.024239688323521524,
+              "se": 0.0032413338171600804,
+              "p": 7.993605777301127e-14
+            },
+            "abs_y_true_z": {
+              "beta": 0.11561024161553404,
+              "se": 0.0030416031673377287,
+              "p": 0.0
+            },
+            "ad_distance_z": {
+              "beta": 0.07642558580233312,
+              "se": 0.003163579433831473,
+              "p": 0.0
+            },
+            "n_instances_z": {
+              "beta": 0.012182673571339503,
+              "se": 0.002878149543808025,
+              "p": 2.3229185246886885e-05
+            }
+          },
+          "r_squared": 0.17194571982611662
+        }
+      },
+      "top_decile": {
+        "n": 1367,
+        "raw_spearman": {
+          "rho": 0.1413044615896784,
+          "p": 1.5543032378846876e-07
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 1367,
+          "partial_rho": 0.010532202350525302,
+          "partial_p": 0.6972308069665435
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.5146649036662052,
+              "se": 0.011296600760049494,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": 0.003816994555413636,
+              "se": 0.01422400990886584,
+              "p": 0.7884715609369339
+            },
+            "abs_y_true_z": {
+              "beta": 0.03725473702006306,
+              "se": 0.012342474660068915,
+              "p": 0.002588197668901282
+            },
+            "ad_distance_z": {
+              "beta": 0.02867315796319405,
+              "se": 0.012333223201097991,
+              "p": 0.020225200296861034
+            },
+            "n_instances_z": {
+              "beta": 0.05317343756281157,
+              "se": 0.013955869379922905,
+              "p": 0.00014509267570095297
+            }
+          },
+          "r_squared": 0.03385871794394668
+        }
+      }
+    },
+    "bin_overlap": {
+      "whole": {
+        "n": 13672,
+        "raw_spearman": {
+          "rho": -0.05690502070915858,
+          "p": 2.765625834849227e-11
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 13672,
+          "partial_rho": -0.03648747185084737,
+          "partial_p": 1.9775249639802834e-05
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.42301106250786796,
+              "se": 0.002820629789978384,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": -0.015240359364306288,
+              "se": 0.0028250700819560694,
+              "p": 6.978782107758263e-08
+            },
+            "abs_y_true_z": {
+              "beta": 0.10834190237564183,
+              "se": 0.0028972367726355424,
+              "p": 0.0
+            },
+            "ad_distance_z": {
+              "beta": 0.08620742020962094,
+              "se": 0.002839928166772517,
+              "p": 0.0
+            },
+            "n_instances_z": {
+              "beta": 0.012742762151856603,
+              "se": 0.0028815681112215417,
+              "p": 9.84723747943228e-06
+            }
+          },
+          "r_squared": 0.17032405761255232
+        }
+      },
+      "top_decile": {
+        "n": 1367,
+        "raw_spearman": {
+          "rho": -0.0817442041797133,
+          "p": 0.00248942774303097
+        },
+        "partial_spearman": {
+          "controls": [
+            "abs_y_true",
+            "ad_distance",
+            "n_instances"
+          ],
+          "n": 1367,
+          "partial_rho": -0.06536229616926839,
+          "partial_p": 0.01564850454005289
+        },
+        "ols": {
+          "coefficients": {
+            "intercept": {
+              "beta": 0.3877148689782838,
+              "se": 0.00856009670620629,
+              "p": 0.0
+            },
+            "causal_coherence_z": {
+              "beta": -0.020245133065803028,
+              "se": 0.008776738610810082,
+              "p": 0.02122209495664862
+            },
+            "abs_y_true_z": {
+              "beta": 0.12040438444916673,
+              "se": 0.008762626613282946,
+              "p": 0.0
+            },
+            "ad_distance_z": {
+              "beta": 0.06970223485542232,
+              "se": 0.008597680316154857,
+              "p": 1.1102230246251565e-15
+            },
+            "n_instances_z": {
+              "beta": 0.015609695664798619,
+              "se": 0.008944589994025915,
+              "p": 0.08118341750530722
+            }
+          },
+          "r_squared": 0.18419160165830584
+        }
+      }
+    }
+  },
+  "crosscheck_reference_file": "results/causal_coherence_confound_controlled_results.json"
+}

@@ -1,0 +1,317 @@
+{
+  "note": "Per-panel-TF breakdown of the causal-coherence top-decile residual, the last untested candidate after n_instances/|y_true|/AD-distance/GC/repeat_frac (see causal_coherence_confound_controlled_gc_repeat_results.json's still-significant 5-control partial rho +0.057, p=2.5e-13). New local motif-rescan computation (motif_shell.motif_hit_positions_by_tf, added this session), not a pure .npz join.",
+  "n_ab_population": 164585,
+  "n_top_decile": 16458,
+  "n_scanned": 164585,
+  "safest_decile_index": 8,
+  "decile_mean_err_profile": [
+    0.5028958320617676,
+    0.48334190249443054,
+    0.4488445818424225,
+    0.40690529346466064,
+    0.3765873610973358,
+    0.33799636363983154,
+    0.3154144883155823,
+    0.29855698347091675,
+    0.3128616511821747,
+    0.49917516112327576
+  ],
+  "panel": [
+    "GATA1",
+    "GATA1::TAL1",
+    "TAL1::TCF3",
+    "KLF1",
+    "NFE2",
+    "MAF::NFE2",
+    "GATA2",
+    "RUNX1",
+    "MYB",
+    "STAT5A::STAT5B"
+  ],
+  "top_vs_rest": {
+    "GATA1": {
+      "top_hit_rate": 0.8455462389111679,
+      "other_hit_rate": 0.9655903380207524,
+      "hit_rate_ratio": 0.8756780237096733,
+      "chi2_p": 0.0,
+      "top_mean_instances": 2.6020780167699598,
+      "other_mean_instances": 5.143957549940254,
+      "mann_whitney_p": 0.0
+    },
+    "GATA1::TAL1": {
+      "top_hit_rate": 0.8401992951755985,
+      "other_hit_rate": 0.9630857304880271,
+      "hit_rate_ratio": 0.8724034305334811,
+      "chi2_p": 0.0,
+      "top_mean_instances": 2.2143638352169157,
+      "other_mean_instances": 4.6339965030008035,
+      "mann_whitney_p": 0.0
+    },
+    "TAL1::TCF3": {
+      "top_hit_rate": 0.9410620974602018,
+      "other_hit_rate": 0.968418991811081,
+      "hit_rate_ratio": 0.9717509728927166,
+      "chi2_p": 1.5105845305464102e-74,
+      "top_mean_instances": 3.1699477457771295,
+      "other_mean_instances": 3.966933779797066,
+      "mann_whitney_p": 0.0
+    },
+    "KLF1": {
+      "top_hit_rate": 0.9504800097217159,
+      "other_hit_rate": 0.8567985579941537,
+      "hit_rate_ratio": 1.109338946539405,
+      "chi2_p": 1.1032103129098368e-245,
+      "top_mean_instances": 17.603900838497996,
+      "other_mean_instances": 4.895738116616147,
+      "mann_whitney_p": 0.0
+    },
+    "NFE2": {
+      "top_hit_rate": 0.8435411350103293,
+      "other_hit_rate": 0.9099151403862902,
+      "hit_rate_ratio": 0.9270547302380496,
+      "chi2_p": 2.7525019672695186e-164,
+      "top_mean_instances": 2.1474662777980313,
+      "other_mean_instances": 2.853571597345521,
+      "mann_whitney_p": 0.0
+    },
+    "MAF::NFE2": {
+      "top_hit_rate": 0.9444039372949325,
+      "other_hit_rate": 0.9825892646175242,
+      "hit_rate_ratio": 0.961138057683283,
+      "chi2_p": 1.2032542298120676e-227,
+      "top_mean_instances": 3.396038400777737,
+      "other_mean_instances": 4.464230018835189,
+      "mann_whitney_p": 0.0
+    },
+    "GATA2": {
+      "top_hit_rate": 0.8033175355450237,
+      "other_hit_rate": 0.9424210306021185,
+      "hit_rate_ratio": 0.852397717644076,
+      "chi2_p": 0.0,
+      "top_mean_instances": 2.3315712723295663,
+      "other_mean_instances": 4.6284674637304475,
+      "mann_whitney_p": 0.0
+    },
+    "RUNX1": {
+      "top_hit_rate": 0.9940454490217523,
+      "other_hit_rate": 0.9901638458890006,
+      "hit_rate_ratio": 1.003920162454797,
+      "chi2_p": 1.2929937147123247e-06,
+      "top_mean_instances": 6.357455340867663,
+      "other_mean_instances": 6.424183302166385,
+      "mann_whitney_p": 9.046900972064346e-18
+    },
+    "MYB": {
+      "top_hit_rate": 0.901628387410378,
+      "other_hit_rate": 0.8657773397152444,
+      "hit_rate_ratio": 1.0414090852815865,
+      "chi2_p": 2.853779854763973e-38,
+      "top_mean_instances": 2.4635435654393,
+      "other_mean_instances": 2.104525170968156,
+      "mann_whitney_p": 5.449498723895089e-146
+    },
+    "STAT5A::STAT5B": {
+      "top_hit_rate": 0.9948353384372342,
+      "other_hit_rate": 0.9987038149695869,
+      "hit_rate_ratio": 0.9961265026984296,
+      "chi2_p": 4.9189119467454935e-30,
+      "top_mean_instances": 6.338254951999028,
+      "other_mean_instances": 7.972672098942124,
+      "mann_whitney_p": 0.0
+    }
+  },
+  "top_vs_safest_decile": {
+    "GATA1": {
+      "top_hit_rate": 0.8455462389111679,
+      "other_hit_rate": 0.9660368187617717,
+      "hit_rate_ratio": 0.8752733047949001,
+      "chi2_p": 4.07139191277982e-306,
+      "top_mean_instances": 2.6020780167699598,
+      "other_mean_instances": 5.121210280089921,
+      "mann_whitney_p": 0.0
+    },
+    "GATA1::TAL1": {
+      "top_hit_rate": 0.8401992951755985,
+      "other_hit_rate": 0.9675557445774349,
+      "hit_rate_ratio": 0.868373010944752,
+      "chi2_p": 0.0,
+      "top_mean_instances": 2.2143638352169157,
+      "other_mean_instances": 4.367093991129473,
+      "mann_whitney_p": 0.0
+    },
+    "TAL1::TCF3": {
+      "top_hit_rate": 0.9410620974602018,
+      "other_hit_rate": 0.9575308341940579,
+      "hit_rate_ratio": 0.9828008288132907,
+      "chi2_p": 1.1651055751212413e-11,
+      "top_mean_instances": 3.1699477457771295,
+      "other_mean_instances": 3.6384348988395407,
+      "mann_whitney_p": 1.8894027100548578e-104
+    },
+    "KLF1": {
+      "top_hit_rate": 0.9504800097217159,
+      "other_hit_rate": 0.7460356036211191,
+      "hit_rate_ratio": 1.2740410847796826,
+      "chi2_p": 0.0,
+      "top_mean_instances": 17.603900838497996,
+      "other_mean_instances": 3.9896713044534904,
+      "mann_whitney_p": 0.0
+    },
+    "NFE2": {
+      "top_hit_rate": 0.8435411350103293,
+      "other_hit_rate": 0.8519351114891549,
+      "hit_rate_ratio": 0.9901471645368001,
+      "chi2_p": 0.035369650137892214,
+      "top_mean_instances": 2.1474662777980313,
+      "other_mean_instances": 2.349292180569901,
+      "mann_whitney_p": 1.932807818631277e-27
+    },
+    "MAF::NFE2": {
+      "top_hit_rate": 0.9444039372949325,
+      "other_hit_rate": 0.9722340360896774,
+      "hit_rate_ratio": 0.9713751033581611,
+      "chi2_p": 1.995810913122972e-36,
+      "top_mean_instances": 3.396038400777737,
+      "other_mean_instances": 3.985114527006501,
+      "mann_whitney_p": 2.452884244088215e-159
+    },
+    "GATA2": {
+      "top_hit_rate": 0.8033175355450237,
+      "other_hit_rate": 0.9431921744941977,
+      "hit_rate_ratio": 0.8517008063344206,
+      "chi2_p": 0.0,
+      "top_mean_instances": 2.3315712723295663,
+      "other_mean_instances": 4.701500698705876,
+      "mann_whitney_p": 0.0
+    },
+    "RUNX1": {
+      "top_hit_rate": 0.9940454490217523,
+      "other_hit_rate": 0.9786135245154627,
+      "hit_rate_ratio": 1.0157691715061166,
+      "chi2_p": 3.215652558177718e-33,
+      "top_mean_instances": 6.357455340867663,
+      "other_mean_instances": 5.952001944225044,
+      "mann_whitney_p": 1.1798945561239677e-19
+    },
+    "MYB": {
+      "top_hit_rate": 0.901628387410378,
+      "other_hit_rate": 0.8505376997387447,
+      "hit_rate_ratio": 1.0600686926485758,
+      "chi2_p": 7.740115948214532e-45,
+      "top_mean_instances": 2.4635435654393,
+      "other_mean_instances": 1.972659335318063,
+      "mann_whitney_p": 1.6875653772420518e-166
+    },
+    "STAT5A::STAT5B": {
+      "top_hit_rate": 0.9948353384372342,
+      "other_hit_rate": 0.9990278874779756,
+      "hit_rate_ratio": 0.9958033713640113,
+      "chi2_p": 1.227281730002865e-11,
+      "top_mean_instances": 6.338254951999028,
+      "other_mean_instances": 8.309435567166899,
+      "mann_whitney_p": 0.0
+    }
+  },
+  "within_top_decile_correlations": {
+    "GATA1": {
+      "corr_with_causal_coherence": {
+        "rho": -0.19524016619420223,
+        "p": 4.2267485435371264e-141
+      },
+      "corr_with_error": {
+        "rho": -0.09655895242848049,
+        "p": 2.1532711345944316e-35
+      }
+    },
+    "GATA1::TAL1": {
+      "corr_with_causal_coherence": {
+        "rho": -0.16776050443277113,
+        "p": 3.6165452762457864e-104
+      },
+      "corr_with_error": {
+        "rho": -0.06558071393485741,
+        "p": 3.710778544633072e-17
+      }
+    },
+    "TAL1::TCF3": {
+      "corr_with_causal_coherence": {
+        "rho": -0.048488677292909725,
+        "p": 4.85442980497803e-10
+      },
+      "corr_with_error": {
+        "rho": 0.02371095535895784,
+        "p": 0.0023497667582365665
+      }
+    },
+    "KLF1": {
+      "corr_with_causal_coherence": {
+        "rho": 0.45962843289510535,
+        "p": 0.0
+      },
+      "corr_with_error": {
+        "rho": 0.1986489722558881,
+        "p": 4.235920772805888e-146
+      }
+    },
+    "NFE2": {
+      "corr_with_causal_coherence": {
+        "rho": -0.017734613718126672,
+        "p": 0.022896495500604776
+      },
+      "corr_with_error": {
+        "rho": 0.06174600146031456,
+        "p": 2.2220166000777103e-15
+      }
+    },
+    "MAF::NFE2": {
+      "corr_with_causal_coherence": {
+        "rho": -0.06002350421413275,
+        "p": 1.291093105678295e-14
+      },
+      "corr_with_error": {
+        "rho": 0.021315672561708923,
+        "p": 0.0062444041053199666
+      }
+    },
+    "GATA2": {
+      "corr_with_causal_coherence": {
+        "rho": -0.17754635750050785,
+        "p": 1.2234303787079989e-116
+      },
+      "corr_with_error": {
+        "rho": -0.07670051102142035,
+        "p": 6.614411457685907e-23
+      }
+    },
+    "RUNX1": {
+      "corr_with_causal_coherence": {
+        "rho": -0.012949133697214182,
+        "p": 0.0966790139377492
+      },
+      "corr_with_error": {
+        "rho": 0.024489358795085514,
+        "p": 0.0016783159667127453
+      }
+    },
+    "MYB": {
+      "corr_with_causal_coherence": {
+        "rho": 0.14215548655687416,
+        "p": 4.883286194867871e-75
+      },
+      "corr_with_error": {
+        "rho": 0.06489743057541708,
+        "p": 7.831283869033858e-17
+      }
+    },
+    "STAT5A::STAT5B": {
+      "corr_with_causal_coherence": {
+        "rho": -0.14634390114866,
+        "p": 1.8471053822587847e-79
+      },
+      "corr_with_error": {
+        "rho": -0.09047612594972951,
+        "p": 2.8994743216420502e-31
+      }
+    }
+  }
+}

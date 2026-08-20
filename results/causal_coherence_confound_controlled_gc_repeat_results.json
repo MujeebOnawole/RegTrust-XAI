@@ -1,0 +1,488 @@
+{
+  "note": "Extends causal_coherence_confound_controlled_full_dataset.py's 3-control model (|y_true|, AD distance, n_instances) with two more controls already computed elsewhere in this project (GC content, RepeatMasker-derived repeat fraction, both from repeat_blindspot_predictions.npz) -- tests whether causal_coherence_tail_diagnosis_full_dataset.py's still-unexplained top-decile residual (partial rho +0.067, p=8.3e-18 under the 3-control model) is absorbed by these two additional candidates.",
+  "controls": [
+    "abs_y_true",
+    "ad_distance",
+    "n_instances",
+    "gc",
+    "repeat_frac"
+  ],
+  "causal": {
+    "whole_ab": {
+      "n": 164548,
+      "raw_spearman": {
+        "rho": -0.1702796148052051,
+        "p": 0.0
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 164548,
+        "partial_rho": -0.050465245313533365,
+        "partial_p": 2.998075416336924e-93
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.39831130691577543,
+            "se": 0.0007672760855500333,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": -0.01869616715079315,
+            "se": 0.0008919448241380292,
+            "p": 0.0
+          },
+          "abs_y_true_z": {
+            "beta": 0.0316498176962272,
+            "se": 0.0011062763884285638,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.06919144293915691,
+            "se": 0.0008595014010457191,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": 0.006571927502789841,
+            "se": 0.0008040722500791498,
+            "p": 2.220446049250313e-16
+          },
+          "gc_z": {
+            "beta": 0.06445727073829409,
+            "se": 0.0010599969232997842,
+            "p": 0.0
+          },
+          "repeat_frac_z": {
+            "beta": -0.02981710146434839,
+            "se": 0.0008799998003379581,
+            "p": 0.0
+          }
+        },
+        "r_squared": 0.15822209701780776
+      }
+    },
+    "top_decile": {
+      "n": 16454,
+      "raw_spearman": {
+        "rho": 0.14337711838592873,
+        "p": 2.696050910664874e-76
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 16454,
+        "partial_rho": 0.05699689971308657,
+        "partial_p": 2.5440052992328506e-13
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.49926735351306545,
+            "se": 0.0030951272943076837,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": 0.026695413199843386,
+            "se": 0.003792062915553917,
+            "p": 2.001065979584382e-12
+          },
+          "abs_y_true_z": {
+            "beta": -0.07176021965464963,
+            "se": 0.003843674237938847,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.06293539336839583,
+            "se": 0.003637525052798746,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": -0.026647204829304626,
+            "se": 0.004268860504299263,
+            "p": 4.419511423492395e-10
+          },
+          "gc_z": {
+            "beta": 0.09784265890195382,
+            "se": 0.00496012363247891,
+            "p": 0.0
+          },
+          "repeat_frac_z": {
+            "beta": -0.07780519570574576,
+            "se": 0.004196843499145474,
+            "p": 0.0
+          }
+        },
+        "r_squared": 0.09214429889642162
+      }
+    },
+    "holdout_only": {
+      "n": 13669,
+      "raw_spearman": {
+        "rho": -0.18099699225869123,
+        "p": 5.297242174428494e-101
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 13669,
+        "partial_rho": -0.04132039555941399,
+        "partial_p": 1.3477808857104642e-06
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.42306438725186046,
+            "se": 0.002805699068798901,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": -0.02460375791578044,
+            "se": 0.003240014847526657,
+            "p": 3.3084646133829665e-14
+          },
+          "abs_y_true_z": {
+            "beta": 0.08868939405562451,
+            "se": 0.004031238516862064,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.07729080919374737,
+            "se": 0.0031515080373095117,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": 0.004608538635191012,
+            "se": 0.0029584536506589315,
+            "p": 0.1193150876920559
+          },
+          "gc_z": {
+            "beta": 0.02450200556406994,
+            "se": 0.003976496491213846,
+            "p": 7.398637258404506e-10
+          },
+          "repeat_frac_z": {
+            "beta": -0.02676642081658837,
+            "se": 0.003200503726114761,
+            "p": 0.0
+          }
+        },
+        "r_squared": 0.17948241204787108
+      }
+    },
+    "holdout_top_decile": {
+      "n": 1366,
+      "raw_spearman": {
+        "rho": 0.1404246106644515,
+        "p": 1.8772043788594497e-07
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 1366,
+        "partial_rho": 0.003476873512348223,
+        "partial_p": 0.8978434813962529
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.5149119560968803,
+            "se": 0.010951296893047729,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": 0.011960766596602335,
+            "se": 0.013809874631185501,
+            "p": 0.38658684431664403
+          },
+          "abs_y_true_z": {
+            "beta": -0.03466087073471631,
+            "se": 0.014224424062328064,
+            "p": 0.01494899350227663
+          },
+          "ad_distance_z": {
+            "beta": 0.07068344835051794,
+            "se": 0.013312177341566749,
+            "p": 1.281437327360635e-07
+          },
+          "n_instances_z": {
+            "beta": -0.02235841524861522,
+            "se": 0.016284408943827013,
+            "p": 0.16998033890345643
+          },
+          "gc_z": {
+            "beta": 0.07538533449396896,
+            "se": 0.01887542766920136,
+            "p": 6.849392578822666e-05
+          },
+          "repeat_frac_z": {
+            "beta": -0.09814392762879783,
+            "se": 0.015520570055728343,
+            "p": 3.4620151190267734e-10
+          }
+        },
+        "r_squared": 0.09426318937477629
+      }
+    }
+  },
+  "bin_overlap": {
+    "whole_ab": {
+      "n": 164548,
+      "raw_spearman": {
+        "rho": -0.04790780560951465,
+        "p": 3.2387412158149237e-84
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 164548,
+        "partial_rho": -0.02380859351475673,
+        "partial_p": 4.496377417201244e-22
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.39831130663986103,
+            "se": 0.0007681639342010519,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": -0.005876523768501771,
+            "se": 0.0007701760575109647,
+            "p": 2.353672812205332e-14
+          },
+          "abs_y_true_z": {
+            "beta": 0.025510866170647156,
+            "se": 0.001065933801800706,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.07677799754183266,
+            "se": 0.0007747763531922152,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": 0.006791407706851434,
+            "se": 0.0008049278276445825,
+            "p": 0.0
+          },
+          "gc_z": {
+            "beta": 0.06361861416695161,
+            "se": 0.0010607541655416352,
+            "p": 0.0
+          },
+          "repeat_frac_z": {
+            "beta": -0.030575173810490238,
+            "se": 0.0008804183762689277,
+            "p": 0.0
+          }
+        },
+        "r_squared": 0.15627285398071966
+      }
+    },
+    "top_decile": {
+      "n": 16454,
+      "raw_spearman": {
+        "rho": -0.05031341050874504,
+        "p": 1.0647569052228371e-10
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 16454,
+        "partial_rho": -0.01357751215304992,
+        "partial_p": 0.08158228683367795
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.36888097811666176,
+            "se": 0.002355057029465839,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": -0.0008972870089904578,
+            "se": 0.002475807138407623,
+            "p": 0.7170413481160556
+          },
+          "abs_y_true_z": {
+            "beta": 0.0070691235589389065,
+            "se": 0.0034297058524697353,
+            "p": 0.03930482252789025
+          },
+          "ad_distance_z": {
+            "beta": 0.07001563067649486,
+            "se": 0.0023772983542583097,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": 0.005128235657291128,
+            "se": 0.0026114269248747398,
+            "p": 0.0495738649885924
+          },
+          "gc_z": {
+            "beta": 0.09010404236306434,
+            "se": 0.0033093379581217155,
+            "p": 0.0
+          },
+          "repeat_frac_z": {
+            "beta": -0.04687935643389899,
+            "se": 0.0027918328267963967,
+            "p": 0.0
+          }
+        },
+        "r_squared": 0.19786031753063282
+      }
+    },
+    "holdout_only": {
+      "n": 13669,
+      "raw_spearman": {
+        "rho": -0.05720755670535028,
+        "p": 2.1824884450854768e-11
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 13669,
+        "partial_rho": -0.02969716817075342,
+        "partial_p": 0.0005156776192071361
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.4230643875713043,
+            "se": 0.002809195993803498,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": -0.013665596159576354,
+            "se": 0.0028172618222837595,
+            "p": 1.244043202008882e-06
+          },
+          "abs_y_true_z": {
+            "beta": 0.08293954392841575,
+            "se": 0.0039559803719498845,
+            "p": 0.0
+          },
+          "ad_distance_z": {
+            "beta": 0.08721669879502997,
+            "se": 0.0028312093012278013,
+            "p": 0.0
+          },
+          "n_instances_z": {
+            "beta": 0.005505832260633902,
+            "se": 0.0029626504368931244,
+            "p": 0.06313167948331411
+          },
+          "gc_z": {
+            "beta": 0.02162997044613797,
+            "se": 0.003970683011771369,
+            "p": 5.199082186990722e-08
+          },
+          "repeat_frac_z": {
+            "beta": -0.02738536182354174,
+            "se": 0.0032028663010813885,
+            "p": 0.0
+          }
+        },
+        "r_squared": 0.17743580869525022
+      }
+    },
+    "holdout_top_decile": {
+      "n": 1366,
+      "raw_spearman": {
+        "rho": -0.0803295903700798,
+        "p": 0.0029681175473578584
+      },
+      "partial_spearman_5control": {
+        "controls": [
+          "abs_y_true",
+          "ad_distance",
+          "n_instances",
+          "gc",
+          "repeat_frac"
+        ],
+        "n": 1366,
+        "partial_rho": -0.06245374061755638,
+        "partial_p": 0.020977141422810354
+      },
+      "ols_6predictor": {
+        "coefficients": {
+          "intercept": {
+            "beta": 0.3874717016161075,
+            "se": 0.00842567764277803,
+            "p": 0.0
+          },
+          "coherence_z": {
+            "beta": -0.020991856254968265,
+            "se": 0.008649903586954751,
+            "p": 0.015360653932731339
+          },
+          "abs_y_true_z": {
+            "beta": 0.06202506933904018,
+            "se": 0.012631559405913994,
+            "p": 1.0194065733770685e-06
+          },
+          "ad_distance_z": {
+            "beta": 0.06803526293959977,
+            "se": 0.008465232023368055,
+            "p": 1.9984014443252818e-15
+          },
+          "n_instances_z": {
+            "beta": -0.002395176382420536,
+            "se": 0.00921339714294411,
+            "p": 0.794928844757496
+          },
+          "gc_z": {
+            "beta": 0.052433030987484766,
+            "se": 0.012462660983273761,
+            "p": 2.7548892408413295e-05
+          },
+          "repeat_frac_z": {
+            "beta": -0.05061229791379137,
+            "se": 0.009847958441614096,
+            "p": 3.158788761670195e-07
+          }
+        },
+        "r_squared": 0.21140883880667205
+      }
+    }
+  },
+  "verdict": "top-decile residual SURVIVES adding GC/repeat_frac as controls (5-control partial rho +0.0570, p=2.54e-13) -- GC/repeat content do not explain the remaining signal",
+  "three_control_top_decile_p_reference": 8.26e-18
+}
